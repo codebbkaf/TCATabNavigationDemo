@@ -13,8 +13,8 @@ struct TCATabNavigatrionDemoApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView(
-                appFeatureStore: Store(initialState: AppFeature.State(isLoggedIn: false), reducer: {
-                    AppFeature()
+                storeLogin: Store(initialState: LoginFeature.State(isLoggedIn: false), reducer: {
+                    LoginFeature()
                 }),
                 storeA: Store(initialState: NavAFeature.State(), reducer: {
                     NavAFeature()

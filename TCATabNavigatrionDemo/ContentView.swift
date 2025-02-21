@@ -9,12 +9,12 @@ import SwiftUI
 import ComposableArchitecture
 
 struct ContentView: View {
-    @Bindable var appFeatureStore: StoreOf<AppFeature>
+    @Bindable var storeLogin: StoreOf<LoginFeature>
     @Bindable var storeA: StoreOf<NavAFeature>
     @Bindable var storeB: StoreOf<NavBFeature>
     
     var body: some View {
-        if appFeatureStore.isLoggedIn {
+        if storeLogin.isLoggedIn {
             TabView {
                 NavAFirstPage(store: storeA)
                     .tabItem { Text("Nav1") }
@@ -22,16 +22,7 @@ struct ContentView: View {
                     .tabItem { Text("Nav2") }
             }
         } else {
-            NavigationStack {
-                VStack {
-                    Form {
-                        Button("Login") {
-                            appFeatureStore.send(.loginButtonTapped)
-                        }
-                    }
-                }
-                .navigationTitle("Welcome")
-            }
+            LoginView(store: storeLogin)
         }
     }
 }

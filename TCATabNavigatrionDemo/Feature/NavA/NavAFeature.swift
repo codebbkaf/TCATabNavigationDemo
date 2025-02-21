@@ -1,5 +1,5 @@
 //
-//  AppFeature.swift
+//  NavAFeature.swift
 //  TCATabNavigatrionDemo
 //
 //  Created by red on 2025/2/21.
@@ -36,4 +36,3 @@ struct NavAFeature {
         .forEach(\.path, action: \.path)
     }
 }
-

@@ -1,5 +1,5 @@
 //
-//  NavAFeature.swift
+//  LoginFeature.swift
 //  TCATabNavigatrionDemo
 //
 //  Created by red on 2025/2/21.
@@ -8,7 +8,7 @@
 import ComposableArchitecture
 
 @Reducer
-struct AppFeature {
+struct LoginFeature {
     @ObservableState
     struct State: Equatable {
         var isLoggedIn: Bool

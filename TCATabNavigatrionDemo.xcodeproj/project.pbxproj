@@ -18,7 +18,8 @@
 		9D23681E2D68B1FB00CB93FE /* NavBFirstPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D23681D2D68B1FB00CB93FE /* NavBFirstPage.swift */; };
 		9D2368202D68B21500CB93FE /* NavBSecPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D23681F2D68B21500CB93FE /* NavBSecPage.swift */; };
 		9D2368222D68B22B00CB93FE /* NavBFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2368212D68B22B00CB93FE /* NavBFeature.swift */; };
-		9D2368262D68B44F00CB93FE /* AppFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2368252D68B44F00CB93FE /* AppFeature.swift */; };
+		9D2368262D68B44F00CB93FE /* LoginFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2368252D68B44F00CB93FE /* LoginFeature.swift */; };
+		9D2368282D68B8BF00CB93FE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2368272D68B8BF00CB93FE /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +34,8 @@
 		9D23681D2D68B1FB00CB93FE /* NavBFirstPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBFirstPage.swift; sourceTree = "<group>"; };
 		9D23681F2D68B21500CB93FE /* NavBSecPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBSecPage.swift; sourceTree = "<group>"; };
 		9D2368212D68B22B00CB93FE /* NavBFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBFeature.swift; sourceTree = "<group>"; };
-		9D2368252D68B44F00CB93FE /* AppFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFeature.swift; sourceTree = "<group>"; };
+		9D2368252D68B44F00CB93FE /* LoginFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFeature.swift; sourceTree = "<group>"; };
+		9D2368272D68B8BF00CB93FE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,9 +71,7 @@
 			children = (
 				9D2368062D68A9FB00CB93FE /* TCATabNavigatrionDemoApp.swift */,
 				9D2368082D68A9FB00CB93FE /* ContentView.swift */,
-				9D2368252D68B44F00CB93FE /* AppFeature.swift */,
-				9D2368232D68B2C500CB93FE /* NavA */,
-				9D2368242D68B2D000CB93FE /* NavB */,
+				9D23682A2D68B9E600CB93FE /* Feature */,
 				9D23680A2D68A9FC00CB93FE /* Assets.xcassets */,
 				9D23680C2D68A9FC00CB93FE /* Preview Content */,
 			);
@@ -104,6 +104,25 @@
 				9D23681F2D68B21500CB93FE /* NavBSecPage.swift */,
 			);
 			path = NavB;
+			sourceTree = "<group>";
+		};
+		9D2368292D68B9C600CB93FE /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9D2368272D68B8BF00CB93FE /* LoginView.swift */,
+				9D2368252D68B44F00CB93FE /* LoginFeature.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		9D23682A2D68B9E600CB93FE /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				9D2368292D68B9C600CB93FE /* Login */,
+				9D2368232D68B2C500CB93FE /* NavA */,
+				9D2368242D68B2D000CB93FE /* NavB */,
+			);
+			path = Feature;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,7 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D2368262D68B44F00CB93FE /* AppFeature.swift in Sources */,
+				9D2368262D68B44F00CB93FE /* LoginFeature.swift in Sources */,
 				9D2368182D68AC6700CB93FE /* NavAFeature.swift in Sources */,
 				9D2368092D68A9FB00CB93FE /* ContentView.swift in Sources */,
 				9D23681E2D68B1FB00CB93FE /* NavBFirstPage.swift in Sources */,
@@ -190,6 +209,7 @@
 				9D23681C2D68B14E00CB93FE /* NavAFirstPage.swift in Sources */,
 				9D2368072D68A9FB00CB93FE /* TCATabNavigatrionDemoApp.swift in Sources */,
 				9D2368202D68B21500CB93FE /* NavBSecPage.swift in Sources */,
+				9D2368282D68B8BF00CB93FE /* LoginView.swift in Sources */,
 				9D2368222D68B22B00CB93FE /* NavBFeature.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
